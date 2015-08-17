@@ -1,0 +1,818 @@
+@charset "utf-8";
+/**
+ * @version		1.0.5 2013
+ * @package		AMoney
+ * @subpackage	mod_amoney
+ * @copyright	Copyright (C) Leonidas 2008 - 2011. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+.amoney-payment a{
+	background:url('../images/donate_am.png') no-repeat;
+    cursor: pointer;
+	display: inline-block;  
+    height: 17px;
+    width: 60px;
+    border: 1px dotted #E1E1E1;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}
+.amoney-payment a:hover { 
+	border: 1px dotted 	#000;
+	width:60px;
+	height:17px;
+}
+.payment span:hover{
+	border: 1px dotted 	#000;
+}
+
+.ctynh15{
+	background:url('../images/donate_am.png') no-repeat;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+/**  Webmoney  **/
+#h1{background-position: -437px -36px;width:60px;height:17px;}
+#h1:hover,
+#h1:active{background-position: -304px -170px;width:60px;height:17px;}
+#h15{background-position: -194px -120px; width: 90px; height: 39px;}
+
+/**  RBKmoney  **/
+#h2{background-position: -376px -54px;width:60px;height:17px;}
+#h2:hover{background-position: -437px 0;width:60px;height:17px;}
+#h16{background-position: -194px 0; width: 90px; height: 39px;}
+
+/**  Yandex  **/
+#h3{background-position: -243px -232px;width:60px;height:17px;}
+#h3:hover{background-position: -346px -134px;width:60px;height:17px;}
+#h17{background-position: -285px -40px; width: 90px; height: 39px;}
+
+/**  E-Gold  **/
+#h4{background-position: -182px -178px;width:60px;height:17px;}
+#h4:hover{background-position: -285px -80px;width:60px;height:17px;}
+#h18{background-position: -103px -40px; width: 90px; height: 39px;}
+
+/**  PayPal  **/
+#h5{background-position: -182px -232px;width:60px;height:17px;}
+#h5:hover{background-position: -285px -134px;width:60px;height:17px;}
+#h19{background-position: -91px -160px; width: 90px; height: 39px;}
+
+/**  LibertyReserve  **/
+#h6{background-position: -376px 0;width:60px;height:17px;}
+#h6:hover{background-position: -182px -196px;width:60px;height:17px;}
+#h20{background-position: 0 -143px; width: 90px; height: 39px;}
+
+/**  MoneyBookers  **/
+#h7{background-position: -243px -160px;width:60px;height:17px;}
+#h7:hover{background-position: -376px -36px;width:60px;height:17px;}
+#h21{background-position: -103px -120px; width: 90px; height: 39px;}
+
+/**  Robox  **/
+#h8{background-position: -243px -178px;width:60px;height:17px;}
+#h8:hover{background-position: -346px -80px;width:60px;height:17px;}
+#h22{background-position: -91px -200px; width: 90px; height: 39px;}
+
+/**  Smskopilka  **/
+#h9{background-position: -243px -196px;width:60px;height:17px;}
+#h9:hover{background-position: -346px -98px;width:60px;height:17px;}
+#h23{background-position: -194px -40px; width: 90px; height: 39px;}
+
+/**  Smszamok  **/
+#h10{background-position: -437px -18px;width:60px;height:17px;}
+#h10:hover{background-position: -243px -214px;width:60px;height:17px;}
+#h24{background-position: -194px -80px; width: 90px; height: 39px;}
+
+/**  MoneyMail  **/
+#h11{background-position: -182px -214px;width:60px;height:17px;}
+#h11:hover{background-position: -285px -116px;width:60px;height:17px;}
+#h25{background-position: -103px -80px; width: 90px; height: 39px;}
+
+/**  liqpay  **/
+#h12{background-position: -285px -98px;width:60px;height:17px;}
+#h12:hover{background-position: -376px -18px;width:60px;height:17px;}
+#h26{background-position: 0 -183px; width: 90px; height: 39px;}
+
+/**  SMScoin  **/
+#h13{background-position: -346px -116px;width:60px;height:17px;}
+#h13:hover{background-position: -304px -152px;width:60px;height:17px;}
+#h27{background-position: -285px 0; width: 90px; height: 39px;}
+
+/**  CberBank  **/
+#h14{background-position: 0 -223px;width:60px;height:17px;}
+#h14:hover{background-position: -182px -160px;width:60px;height:17px;}
+#h28{background-position: -103px 0; width: 90px; height: 39px;}
+
+
+.img1{
+	border:0;
+	max-width:120px;
+	height:7px;
+	text-align: center;
+}
+
+
+.wm-pay-1,
+.rupay-pay-1,
+.yandex-pay-1,
+.egold-pay-1,
+.paypal-pay-1,
+.libertyreserve-pay-1,
+.moneybookers-pay-1,
+.robox-pay-1,
+.liqpay-pay-1 {
+	margin-left: auto;
+	margin-right: auto;
+    width: 30px;
+}
+
+.m_mail-pay-1 {
+	margin-left: auto;
+	margin-right: auto;
+    width: 40px;
+}
+
+.moneybookers-pay-2,
+.libertyreserve-pay-2,
+.paypal-pay-3,
+.egold-pay-2,
+.liqpay-pay-2,
+.wm-pay-2 {
+	margin-left: auto;
+	margin-right: auto;
+    width: 70px;
+}
+
+.paypal-pay-2 {
+	margin-left: auto;
+	margin-right: auto;
+    width: 130px;
+}
+
+
+a {
+    outline: none;
+   }
+a img {
+    border: none;
+   }
+/**
+ * #amoney-module {
+ * 	border:0;
+ * 	width:auto;
+ * 	text-align:center;
+ * }
+ */
+
+#amoney .amoney-module {
+	border:0;
+	width: auto;
+	text-align:center;
+}
+#amoney .amoney-mod1 {
+	border:0;
+	width:100%;
+	text-align:center;
+	margin-bottom: 7px;
+}
+#amoney .amoney-mod2 {
+	border:0; 
+	width:100%;
+	text-align:center;
+}
+
+span.panel1 {
+	font-weight:bold;
+	cursor:pointer;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	padding:3px;
+}
+.bor1 { 
+	border: 1px dotted 	#e1e1e1; 
+	width:60px;
+	height:17px;
+}
+.bor1:hover { 
+	border: 1px dotted 	#000;
+	width:60px;
+	height:17px;
+}
+.bor2 { 
+	border:0;
+	width:90px;
+	height:39px
+}
+
+
+.amoney {
+	margin-top: 5px;
+	overflow:hidden;
+    background: #FFFFF0;
+    border: 1px solid #E1E1E1;
+	padding: 0;
+    border-radius: 12px;
+	text-align:center;
+	display:none;
+}
+
+.ampoweredby1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	margin:3px;
+	text-align:center;
+}
+
+#ampoweredby {
+	text-align:center !important;
+}
+
+.poweredby1 { 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	margin:3px;
+	text-align:center !important;
+}
+
+/* wm */
+
+#wm	{
+	padding-top: 6px;
+}
+
+#wm .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+
+#wm .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+
+#wm .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+
+#wm .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* rupay */
+
+#rupay	{
+	padding-top: 6px;
+}
+
+#rupay .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#rupay .amoney div {
+    margin: 0;
+	text-align:center;
+}
+
+#rupay .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+
+#rupay .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* yandex */
+
+#yandex	{
+	padding-top: 6px;
+}
+
+#yandex .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#yandex .amoney div {
+    margin: 0;
+    text-align: left;
+}
+
+#yandex .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+
+#yandex .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* egold */
+
+#egold	{
+	padding-top: 6px;
+}
+
+#egold .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#egold .amoney div {
+    margin: 0;
+    text-align: left;
+}
+
+#egold .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+
+#egold .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* paypal */
+
+#paypal	{
+	padding-top: 6px;
+}
+
+#paypal .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#paypal .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#paypal .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+
+#paypal .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* libertyreserve */
+
+#libertyreserve	{
+	padding-top: 6px;
+}
+
+#libertyreserve .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#libertyreserve .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#libertyreserve .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#libertyreserve .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* moneybookers */
+
+#moneybookers	{
+	padding-top: 6px;
+}
+
+#moneybookers .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#moneybookers .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#moneybookers .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#moneybookers .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+
+/* robox */
+
+#robox	{
+	padding-top: 6px;
+}
+
+#robox .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#robox .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#robox .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#robox .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* sms */
+
+#sms	{
+	padding-top: 6px;
+}
+
+#sms .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#sms .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#sms .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#sms .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* sms1 */
+
+#sms1	{
+	padding-top: 6px;
+}
+
+#sms1 .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#sms1 .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#sms1 .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#sms1 .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* mmail */
+
+#mmail	{
+	padding-top: 6px;
+}
+
+/* mmail img */
+
+#mmail .amoney-mmail-img1 {
+	background: url('../images/donate_am.png') no-repeat 0 0;
+	width:102px;
+	height:142px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	text-decoration: none;
+}
+
+#mmail .amoney-mmail-img2 {
+	display:block; 
+	padding:8px 0 0; 
+	margin:0 auto; 
+	height:122px; 
+	width:100px; 
+	overflow:hidden; 
+	color: #5d5d5d; 
+	text-align: center; 
+	font-size: 14px; 
+	line-height: 14px; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	background-position: 50% 33px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+/* mmail img end */
+
+#mmail .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#mmail .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#mmail .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#mmail .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* liqpay */
+
+#liqpay	{
+	padding-top: 6px;
+}
+
+#liqpay .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#liqpay .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#liqpay	.cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#liqpay .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 10px;
+	text-align:center;
+}
+
+/* smscoin */
+
+#smscoin	{
+	padding-top: 6px;
+}
+
+#smscoin .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#smscoin .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#smscoin .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#smscoin .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 40px;
+	text-align:center;
+}
+#smscoin #cont2 {
+margin-top: 50px;
+margin-bottom: 10px;
+}
+/* cbank */
+
+#cbank	{
+	padding-top: 6px;
+}
+
+#cbank .amoney {
+    margin: 0;
+    overflow: hidden;
+    width: auto;
+}
+#cbank .amoney div {
+    margin: 0;
+    text-align: center;
+}
+
+#cbank .cont1 {
+	width:100%;
+	border: 0;
+	text-align:center;
+}
+#cbank .cont2 {
+	width:100%;
+	border: 0;
+	margin-top: 40px;
+	text-align:center;
+}
+#cbank #cont3 {
+margin-top: 50px;
+margin-bottom: 10px;
+}
+
+/* end */
+
+a img.kopilka  {
+	width: 128px;
+}
+.karma1 {
+    text-align: center;
+    width: 100%;
+}
+.karma2 {
+    border: 0 none;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+.karma3 {
+    width: 120px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 120px;
+    height: 7px;
+}
+.karma4 {
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+.letter {
+	background-color: inherit;
+	color: #010101;
+} 
+.letter1 {
+	color: #0000ff;
+	background-color: inherit;
+} 
+.letter2 {
+	color: #008000; 
+	background-color: inherit;
+	font-weight: bold;
+} 
+.letter3 {
+	position:relative;
+	background-color: inherit;
+	border: 0 none;
+	color: #010101;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	margin: 3px;
+} 
+.gray, .red{
+    height: 7px;
+}
+.gray{
+    background-color: #CCC;
+}
+.red{
+	position:relative;
+    background-color: red;
+	max-width: 100%;
+}
+/*  P {cursor: pointer} */
+
+.pay-button {
+    border: 0 none;
+    padding: 0;
+	background: url(../images/g.svg) no-repeat 0 0 #eee; /* Chrome 25-, Firefox 15-, Opera 12, Safari, IE9, Mobile*/
+	background: linear-gradient(#7d7e7d, #0e0e0e); /* Chrome 26+, Firefox 16+, Opera 12.1+, IE10+ */
+    border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 0 #959595 inset, 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 14px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    width: auto;
+}
+.pay-button:hover {
+    background: none repeat scroll 0 0 #000000;
+}
+
+.pay-button1 {
+    border: 0 none;
+    padding: 0;
+	background: url(../images/e.svg) no-repeat 0 0 #eee; /* Chrome 25-, Firefox 15-, Opera 12, Safari, IE9, Mobile*/
+	background: linear-gradient(#00b4f5, #0096d2); /* Chrome 26+, Firefox 16+, Opera 12.1+, IE10+ */
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 100, 145, 0.5);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 14px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    width: auto;
+}
+.pay-button1:hover {
+    background: none repeat scroll 0 0 #00A5E4;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 3px rgba(0, 0, 0, 0.3) inset, 0 0 2px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 100, 145, 0.5);
+}
+
+.pay-button2 {
+    border: 0 none;
+    padding: 0;
+	background: url(../images/f.svg) no-repeat 0 0 #eee; /* Chrome 25-, Firefox 15-, Opera 12, Safari, IE9, Mobile*/
+	background: linear-gradient(#d2d3d4, #f5f6f7); /* Chrome 26+, Firefox 16+, Opera 12.1+, IE10+ */
+    border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 0 #FFFFFF inset, 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2);
+    color: #444444;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 14px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+    width: auto;
+}
+.pay-button2:hover {
+    background: none repeat scroll 0 0 #E6E7E8;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 3px rgba(0, 0, 0, 0.5) inset, 0 0 2px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
