@@ -1,0 +1,68 @@
+/**
+ * @version		1.0.5 2013
+ * @package		AMoney
+ * @subpackage	mod_amoney
+ * @copyright	Copyright (C) Leonidas 2008 - 2011. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+	.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; }
+	.tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+/**.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }**/
+	.tipsy-inner { border-radius: 3px; }
+	.tipsy-arrow { position: absolute; background: url('../images/tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
+.tipsy-n .tipsy-arrow {
+    background-position: center top;
+    left: 50%;
+    margin-left: -4px;
+    top: 0;
+}
+.tipsy-s .tipsy-arrow {
+    background-position: center bottom;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+.tipsy-e .tipsy-arrow {
+    background-position: right center;
+    height: 9px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    width: 5px;
+}
+.tipsy-w .tipsy-arrow {
+    background-position: left center;
+    height: 9px;
+    left: 0;
+    margin-top: -4px;
+    top: 50%;
+    width: 5px;
+}
+.tipsy-n .tipsy-arrow {
+    background-position: 50% 0;
+    left: 50%;
+    margin-left: -4px;
+    top: 0;
+}
+.tipsy-s .tipsy-arrow {
+    background-position: 50% 100%;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+.tipsy-e .tipsy-arrow {
+    background-position: 100% 50%;
+    height: 9px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    width: 5px;
+}
+.tipsy-w .tipsy-arrow {
+    background-position: 0 50%;
+    height: 9px;
+    left: 0;
+    margin-top: -4px;
+    top: 50%;
+    width: 5px;
+}
