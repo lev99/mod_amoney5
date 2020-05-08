@@ -12,7 +12,7 @@
 ## Author...........: Leonidas                                                ##
 ## Version..........: 1.0.7                                                   ##
 ## Created date.....: 17.12.2013                                              ##
-## Contact info.....: url: www.foto-s.ru / e-mail: leonidas78@mail.ru         ##
+## Contact info.....: url: foto-s.ru / e-mail: leonidas78@mail.ru 	          ##
 ## Joomla Version...: 1.5.х, 2.5.х and 3.0.x Stable and high                  ##
 ## Note.............: This script is a part of AMoney 1.0 package.            ##
 ## Based............: on AMoney 1.0 by Adeptus[http://www.adeptsite.info]     ##
@@ -23,7 +23,7 @@ defined('_JEXEC') or die;
 
 // Global
 $mainframe = JFactory::getApplication();
-$mosConfig_live_site = JURI::base( true ); 
+$mosConfig_live_site = JURI::base( true );
 
 //css
 $document =& JFactory::getDocument();
@@ -81,12 +81,12 @@ $document->addStyleSheet('modules/mod_amoney/css/tipsy.css' );
 };
 // Note: please refer: "Powered by Donate-Amoney" - not to remove, if you want to remove, please contact the author of the script!
 $str2 = 'Donate-Amoney';
-$str1 = 'http://www.foto-s.ru/universal-module.html';
+$str1 = 'http://foto-s.ru/newspage/joomla/413-universal-module';
 $str3 = JText::_('MOD_AMONEY_POWERED_BY');
 $str4 = JText::_('MOD_AMONEY_VISIT_AUTHOR');
-$copcop = 'Работает на&nbsp;<a id="north" href="http://www.foto-s.ru/universal-module.html" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
+$copcop = 'Работает на&nbsp;<a id="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
 if ($params->get('copy')==1) {
-$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://www.foto-s.ru/universal-module.html" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
+$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
 $copy= $copycopy; }
 else { $copy=""; };
 $width_border = $params->get('width_border', '100');
