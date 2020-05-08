@@ -12,7 +12,7 @@
 ## Author...........: Leonidas                                                ##
 ## Version..........: 1.0.7                                                   ##
 ## Created date.....: 17.12.2013                                              ##
-## Contact info.....: url: foto-s.ru / e-mail: leonidas78@mail.ru 	          ##
+## Contact info.....: url: foto-s.ru / e-mail: leonidas78@mail.ru             ##
 ## Joomla Version...: 1.5.х, 2.5.х and 3.0.x Stable and high                  ##
 ## Note.............: This script is a part of AMoney 1.0 package.            ##
 ## Based............: on AMoney 1.0 by Adeptus[http://www.adeptsite.info]     ##
