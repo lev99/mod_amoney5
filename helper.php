@@ -81,12 +81,12 @@ $document->addStyleSheet('modules/mod_amoney/css/tipsy.css' );
 };
 // Note: please refer: "Powered by Donate-Amoney" - not to remove, if you want to remove, please contact the author of the script!
 $str2 = 'Donate-Amoney';
-$str1 = 'http://foto-s.ru/newspage/joomla/413-universal-module';
+$str1 = 'http://foto-s.ru/newspage/joomla/universal-module';
 $str3 = JText::_('MOD_AMONEY_POWERED_BY');
 $str4 = JText::_('MOD_AMONEY_VISIT_AUTHOR');
-$copcop = 'Работает на&nbsp;<a id="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
+$copcop = 'Работает на&nbsp;<a id="north" href="http://foto-s.ru/newspage/joomla/universal-module" title="Посетить Автора!" rel="nofollow">Donate-Amoney</a>';
 if ($params->get('copy')==1) {
-$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://foto-s.ru/newspage/joomla/413-universal-module" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
+$copycopy='<span class="letter">Работает на</span>&nbsp;<a class="north" href="http://foto-s.ru/newspage/joomla/universal-module" title="Посетить Автора!" rel="nofollow"><span class="letter1">Donate-Amoney</span></a>';
 $copy= $copycopy; }
 else { $copy=""; };
 $width_border = $params->get('width_border', '100');
