@@ -14,8 +14,8 @@ defined('_JEXEC') or die;
 <!-- Leonidas "Donate-Amoney" Module (v1.0.7) starts here -->
 <script type="text/javascript">
 /* <![CDATA[ */
-	<?php 
-	echo $t2; 
+	<?php
+	echo $t2;
 	if ($use_wm)
 	{?>
 	function show_wm()
@@ -1274,7 +1274,7 @@ defined('_JEXEC') or die;
 						<option value="<?php echo $wmnum5;?>"><?php echo $wmtype5;?></option>
 	<?php
 	}?>
-					</optgroup> 
+					</optgroup>
 				</select>
 
 </span>
@@ -1374,7 +1374,7 @@ defined('_JEXEC') or die;
 				<div class="cont1" style="text-align: center;">
             <input type="hidden" name="PAYEE_ACCOUNT"  value="<?php echo $number;?>" />
             <input type="hidden" name="PAYEE_NAME"  value="<?php echo $name;?>" />
-            <input type="hidden" name="PAYMENT_METAL_ID" value="1" />  
+            <input type="hidden" name="PAYMENT_METAL_ID" value="1" />
 <span class="focus-example1">
 			<input id="egold-pay-1" class="egold-pay-1" type="text" name="PAYMENT_AMOUNT"  size="3" value="<?php echo $egold_summ;?>" title="<?php echo JText::_('MOD_AMONEY_ENTER_AMOUNT'); ?>" <?php echo $amofixed;?> />
 </span>
@@ -1385,10 +1385,10 @@ defined('_JEXEC') or die;
             <input type="hidden" name="BAGGAGE_FIELDS"  value="" />
 <span class="focus-example">
 				<select id="egold-pay-2" class="egold-pay-2" name="payment_units" title="<?php echo JText::_('MOD_AMONEY_CHOOSE_A_CURRENCY'); ?>" style="min-width:30px;">
-                	<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>"> 
-                		<option value="1">USD</option> 
+                	<optgroup label="<?php echo JText::_('MOD_AMONEY_AMONEY_CHOICE'); ?>">
+                		<option value="1">USD</option>
                 		<option value="85">Euro</option>
-                	</optgroup> 
+                	</optgroup>
                 </select>
 </span>
 			<input type="hidden" name="suggested_memo" value="<?php echo $egoldinfo1; ?>" />
@@ -1487,12 +1487,12 @@ if ($donate_len == 0) {
     <option value="1"><?php echo JText::_('MOD_AMONEY_WEEKLY');?></option>
     <option value="2"><?php echo JText::_('MOD_AMONEY_MONTHLY');?></option>
     <option value="3"><?php echo JText::_('MOD_AMONEY_ANNUAL');?></option>
-	</optgroup> 
+	</optgroup>
   </select>
 </span>
 	<?php
 	}
-	else if ($donate_len == 1) 
+	else if ($donate_len == 1)
 	{?>
 	<input type="hidden" name="paypallength" value="<?php echo $paypallen_val;?>" />
 	<?php
@@ -1556,9 +1556,9 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
-	if ($use_moneybookers) 
+	if ($use_moneybookers)
 	{?>
 <!-- MoneyBookers -->
 <div id="moneybookers" class="amoney" style="width:<?php echo $width_border; ?>%;height:<?php echo $height_border; ?>px;text-align: center;">
@@ -1603,7 +1603,7 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_robox)
 	{?>
@@ -1653,7 +1653,7 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_sms1)
 	{?>
@@ -1675,7 +1675,7 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_mmail)
 	{?>
@@ -1686,7 +1686,7 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_liqpay)
 	{?>
@@ -1696,7 +1696,7 @@ if ($donate_len == 0) {
 				<div class="cont1" style="text-align: center;">
 					<div id="h26" class="ctynh15" style="text-align: center;"></div>
 				</div>
-					<?php 
+					<?php
 						echo $off_intrerst;
 						echo $switch_fixed;
 					?>
@@ -1708,7 +1708,7 @@ if ($donate_len == 0) {
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_smscoin)
 	{?>
@@ -1746,7 +1746,7 @@ smsDonateInit();
 	<?php echo $copy;?>
 </div>
 </div>
-	<?php 
+	<?php
 	}
 	if ($use_cbank)
 	{?>
@@ -1762,8 +1762,8 @@ smsDonateInit();
 /* <![CDATA[ */
 function new_window()
 {
-var win=window.open('','_blank','width=800,height=700')  
-win.document.open()  
+var win=window.open('','_blank','width=800,height=700')
+win.document.open()
 win.document.write('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">')
 win.document.write('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru">')
 win.document.write('<head>')
@@ -1854,7 +1854,7 @@ win.document.close()
 	if ($info_liqpay)
 	{?>
 <div id="ampoweredby_inf" style="text-align: center;">
-					<?php 
+					<?php
 if ($params->get('switch_fixed')==1) {
 $operation_envelop = '<operation_envelope>';
 $operation_envelop .= '<operation_xml>'.$operation_xml.'</operation_xml>';
@@ -1881,7 +1881,7 @@ $headers = array("POST ".$page." HTTP/1.0",
      $result = curl_exec($ch);
      curl_close($ch);
      echo $result;
-} else { 
+} else {
 $operation_envelop = '<operation_envelope>';
 $operation_envelop .= '<operation_xml>'.$xml_encoded.'</operation_xml>';
 $operation_envelop .= '<signature>'.$lqsignature.'</signature>';
@@ -1907,12 +1907,12 @@ $headers = array("POST ".$page." HTTP/1.0",
      $result = curl_exec($ch);
      curl_close($ch);
      echo $result;
-}; 
+};
 					?>
 </div>
 <?php
 	}?>
-<div id="ampoweredby" class="ampoweredby1" style="text-align: center;"><?php 
+<div id="ampoweredby" class="ampoweredby1" style="text-align: center;"><?php
 	if ($exterlink)
 	{
 echo $copcop;
